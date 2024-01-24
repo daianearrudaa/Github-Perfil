@@ -1,0 +1,21 @@
+
+.header {
+    width: 100vw;
+    background-color: #6F1E51;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 90px 0 40px ;
+}
+
+.avatar{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.name{
+    font-size: 18px;
+    color: black;
+}

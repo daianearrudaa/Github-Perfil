@@ -1,14 +1,17 @@
-/* eslint-disable react/prop-types */
-import './perfil.css';
 
-const Perfil = (props) => {
-    const{ endereco,nome}=props;
+import styles from './Perfil.module.css';
+
+// eslint-disable-next-line react/prop-types
+const Perfil = ({ nomeUsuario }) => {
+    
     return (
-        <div>
-            <img src={endereco} className="perfil-avatar" alt="" />
-            <h3 className='perfil-titulo'>{nome}</h3>
-        </div>
-    );
+        <header className={styles.header}>
+            <img className={styles.avatar} src={`https://github.com/${nomeUsuario}.png`} alt="" />
+            <h1 className={styles.name}>
+                {nomeUsuario}
+                </h1>
+        </header>
+    )
 }
 
 export default Perfil;

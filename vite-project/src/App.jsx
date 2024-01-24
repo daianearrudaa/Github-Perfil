@@ -11,7 +11,7 @@ function App() {
 
     return (
         <>
-            <Perfil nome="Daiane" endereco="https://github.com/daianearrudaa.png" />
+            <Perfil nomeUsuario={"daianearrudaa"} />
             <RepoList />
             
            {/* { {formularioEstaVisivel &&(
