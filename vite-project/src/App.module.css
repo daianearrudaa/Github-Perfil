@@ -36,6 +36,12 @@
   text-shadow: 3px 3px 3px black ;
 }  
 
+.h2{
+  padding-top: 20px;
+  text-align: center;
+  color: red;
+}
+
 .button{
   background-color: rgb(68, 120, 180);
   margin-left: 8px;
