@@ -6,9 +6,11 @@ import styles from './RepoList.module.css';
 const RepoList = ({ nomeUsuario }) => {
     const [repos, setRepos] = useState([]);
     const [estaCarregando, setEstaCarregando] = useState(true);
+    const [deuError, setDeuError] = useState(false);
 
 
     useEffect(() => {
+        setDeuError(true);
         setEstaCarregando(true);
         fetch(`https://api.github.com/users/${nomeUsuario}/repos`)
             .then(res => res.json())
@@ -19,8 +21,14 @@ const RepoList = ({ nomeUsuario }) => {
                 }, 3000)
 
             })
+
+            .catch (e => {
+                setDeuError(true);
+            })
+        
     }, [nomeUsuario]);
 
+    
     return (
         <div className="container">
             
