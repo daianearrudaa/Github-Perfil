@@ -14,4 +14,6 @@ const Perfil = ({ nomeUsuario }) => {
     )
 }
 
+
+
 export default Perfil;
