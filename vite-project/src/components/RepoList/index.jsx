@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable react/prop-types */
 import { useEffect, useState } from "react";
 import styles from './RepoList.module.css';
@@ -22,7 +23,7 @@ const RepoList = ({ nomeUsuario }) => {
 
             })
 
-            .catch (e => {
+            .catch (() => {
                 setDeuError(true);
             })
         
@@ -45,7 +46,7 @@ const RepoList = ({ nomeUsuario }) => {
                                     {language}</div>
 
 
-                                <a className={styles.itemLink} href={html_url} >Visitar no Github</a>
+                                <a className={styles.itemLink} target="_blank" href={html_url} >Visitar no Github</a>
                             </li>
                         ))}
 

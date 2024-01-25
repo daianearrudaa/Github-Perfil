@@ -1,7 +1,7 @@
 .list{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 16px;
+    gap: 15px;
     
 }
 
@@ -9,6 +9,7 @@
     list-style: none;
     padding: 16px;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 5px 50px var(--corSecundaria);
 }
 
 .itemName b, .itemLanguage b{
@@ -25,7 +26,7 @@
 
 .itemLink{
     display: block;
-    background-color:var(--corPrincipal) ;
+    background-color:var(--corSecundaria) ;
     color: var(--corTerciaria);
     text-align: center;
     font-weight: bold;

@@ -13,7 +13,8 @@ function App() {
     const [nomeUsuario, setNomeUsuario]=useState('');
 
     return (
-        <>
+        <>  
+           
             <div className={styles.div}>
             <h1 className={styles.h1}>Digite aqui o perfil do Github que deseja procurar:</h1>
             <input type="text" placeholder="Nome do Usuário" className={styles.input} onBlur={(e)=> setNomeUsuario(e.target.value)}/>
@@ -34,7 +35,7 @@ function App() {
 
             <button onClick={()=> setFormularioEstaVisivel(!formularioEstaVisivel)} type="button">toggle form</button>} */}
            
-            
+    
         </>
     )
 }

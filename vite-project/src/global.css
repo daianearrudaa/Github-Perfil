@@ -17,7 +17,7 @@
 }
 
 :root {
-    --corPrincipal:#261f80;
-    --corSecundaria:black; 
+    --corPrincipal:#4a0bf8;
+    --corSecundaria:rgb(0, 0, 0); 
     --corTerciaria: rgb(255, 255, 255);
 }

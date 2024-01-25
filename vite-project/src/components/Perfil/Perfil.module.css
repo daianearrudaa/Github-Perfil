@@ -5,8 +5,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 90px 0 40px ;
+    padding: 70px 0 40px ;
     margin-bottom: 80px;
+    box-shadow: 20px 2px 20px ;
 }
 
 .avatar{
@@ -14,6 +15,7 @@
     height: 160px;
     border-radius: 50%;
     border: 2px solid var(--corPrincipal);
+    box-shadow: 1px 5px 50px var(--corTerciaria);
 }
 
 .name{

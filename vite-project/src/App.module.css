@@ -1,9 +1,12 @@
+
 .div{
   width: 100vw;
-  min-width: 800px;
+  min-width: 500px;
+  height: 6em;
   align-items: center;
   text-align: center;
-  background-color: aqua;
+  background-image: url('./image/430918.jpg') ;
+  background-size: 60%;
 }
 
 .input{
@@ -11,29 +14,35 @@
     height: 3em;
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: rgb(69, 152, 247);
+    background-color: rgb(255, 255, 255);
     text-align: center;
-    border-radius: 20px;
     border: none;
-    box-shadow: 2px 2px 8px #000; 
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px #ffffff; 
   }
  
 .input::placeholder {
-  color: #000; 
+  color: rgb(69, 152, 247); 
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
   font-size: 15px;
   font-weight: bold;
 }  
 
 .h1{
+  padding-top: 0.5em;
   font-size: 20px;
   text-align: center;
+  color: #ffffff;
+  text-shadow: 3px 3px 3px black ;
 }  
 
 .button{
-  background-color: rgb(69, 152, 247);
+  background-color: rgb(68, 120, 180);
   margin-left: 8px;
   border-radius: 20px;
   border: none;
-  box-shadow: 2px 2px 8px #000;
+  box-shadow: 2px 2px 8px #ffffff;
   font-weight: bold;
+  color: #ffffff;
+  text-shadow: 3px 3px 3px black ;
 }
