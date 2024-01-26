@@ -7,25 +7,30 @@ const RepoList = ({ nomeUsuario, setUsuarioEncontrado }) => {
 
     useEffect(() => {
         setEstaCarregando(true);
-
+    
         fetch(`https://api.github.com/users/${nomeUsuario}/repos`)
             .then(res => {
                 if (!res.ok) {
+                    setEstaCarregando(false);
+                    setUsuarioEncontrado(false); // Define que o usuário não foi encontrado
                     throw new Error('Usuário não encontrado');
                 }
                 return res.json();
             })
             .then(resJson => {
-                setRepos(resJson);
-                setEstaCarregando(false);
-                setUsuarioEncontrado(true); // Define que o usuário foi encontrado
+                // Define um tempo de espera antes de exibir os dados
+                setTimeout(() => {
+                    setRepos(resJson);
+                    setEstaCarregando(false);
+                    setUsuarioEncontrado(true); // Define que o usuário foi encontrado
+                }, 3000); // Tempo de espera em milissegundos (3 segundos)
             })
             .catch(() => {
                 setEstaCarregando(false);
                 setUsuarioEncontrado(false); // Define que o usuário não foi encontrado
             });
     }, [nomeUsuario, setUsuarioEncontrado]);
-
+    
     return (
         <div className="container">
             {estaCarregando ? (
