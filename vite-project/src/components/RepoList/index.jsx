@@ -3,8 +3,7 @@ import styles from './RepoList.module.css';
 
 const RepoList = ({ nomeUsuario, setUsuarioEncontrado }) => {
     const [repos, setRepos] = useState([]);
-    const [estaCarregando, setEstaCarregando] = useState(true);
-    const [deuErro,setDeuErro]= useState(false);
+    const [estaCarregando, setEstaCarregando] = useState(true); 
 
     useEffect(() => {
         setEstaCarregando(true);
@@ -25,13 +24,12 @@ const RepoList = ({ nomeUsuario, setUsuarioEncontrado }) => {
             })
             .catch(() => {
                 setEstaCarregando(false);
-                setDeuErro(true);
             });
     }, [nomeUsuario, setUsuarioEncontrado]);
 
     return (
         <div className="container">
-            {setDeuErro&&(<h1>Erro</h1>)}
+            
             {estaCarregando ? (
                 <h2>Carregando...</h2>
             ) : (
