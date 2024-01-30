@@ -26,9 +26,11 @@ Este projeto em React visa proporcionar aos usuários uma forma de explorar os r
 
 - **Tela de Usuário não Encontrado:** A segunda imagem mostra a tela exibida quando o usuário procurado não é encontrado na plataforma do GitHub. Isso pode ocorrer se o nome de usuário estiver incorreto ou se a conta associada não existir.
 
+- **Usuário Encontrado:** Na imagem a seguir, é demonstrado o resultado da busca bem-sucedida de um usuário. Aqui, os repositórios associados ao usuário são exibidos, permitindo que os usuários explorem facilmente as informações detalhadas de cada um.
+
 ![Usuário Encontrado](vite-project/src/image/print2.png)
 
-- **Usuário Encontrado:** Na terceira imagem, é demonstrado o resultado da busca bem-sucedida de um usuário. Aqui, os repositórios associados ao usuário são exibidos, permitindo que os usuários explorem facilmente as informações detalhadas de cada um.
+
 
 
 
