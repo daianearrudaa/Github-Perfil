@@ -9,14 +9,17 @@ Este projeto em React visa proporcionar aos usuários uma forma de explorar os r
 ## Screenshots:
 
 <table>
+  
+ <tr>
+    <td><em>Tela inicial - Busca de Usuário</em></td>
+    <td><em>Usuário não Encontrado</em></td>
+  </tr>
+
   <tr>
     <td><img src="vite-project/src/image/print1.png" alt="Tela inicial - Busca de Usuário"></td>
     <td><img src="vite-project/src/image/print3.png" alt="Tela de Usuário não Encontrado"></td>
   </tr>
-  <tr>
-    <td><em>Tela inicial - Busca de Usuário</em></td>
-    <td><em>Tela de Usuário não Encontrado</em></td>
-  </tr>
+ 
 </table>
 
 - **Tela Inicial - Busca de Usuário:** Na primeira imagem, você pode ver a tela inicial do projeto, onde os usuários podem inserir o nome do usuário do GitHub que desejam explorar.
