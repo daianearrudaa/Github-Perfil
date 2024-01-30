@@ -1,6 +1,6 @@
 # GitHub - Perfil 🚀
 
-Este projeto React visa proporcionar aos usuários uma forma de explorar os repositórios de um usuário no GitHub. Ao inserir o nome de usuário desejado, o projeto utiliza a API do GitHub para recuperar informações detalhadas sobre os repositórios associados àquela conta.
+Este projeto em React visa proporcionar aos usuários uma forma de explorar os repositórios de um usuário no GitHub. Ao inserir o nome de usuário desejado, o projeto utiliza a API do GitHub para recuperar informações detalhadas sobre os repositórios associados àquela conta.
 
 ## Funcionalidades Principais:
 
